@@ -1,0 +1,89 @@
+$padding: 16px;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#quote-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  width: 70%;
+  margin: auto;
+  padding: $padding;
+  position: relative;
+
+  h1 {
+    font-size: 48px;
+    padding: $padding;
+    position: absolute;
+    top: 15%;
+  }
+
+  p {
+    font-size: 22px;
+    padding-bottom: $padding;
+    text-align: left;
+
+    span {
+      font-size: 30px;
+    }
+  }
+
+  h5 {
+    text-align: right;
+    padding: $padding;
+    font-size: 25px;
+  }
+}
+
+h1,
+p,
+h5 {
+  font-family: "Courgette", cursive;
+}
+
+.button {
+  display: flex;
+  position: absolute;
+  left: 0;
+  bottom: 26%;
+
+  #tweet-quote {
+    text-decoration: none;
+    color: #fff;
+    background: #0084b4;
+    padding: 8px;
+    border-radius: 3px;
+    margin-right: 10px;
+  }
+
+  #new-quote {
+    color: #fff;
+    background: #008b00;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 6px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #quote-box h1 {
+    font-size: 28px;
+    top: 20%;
+  }
+
+  #quote-box p {
+    font-size: 20px;
+  }
+
+  .button {
+    left: 10%;
+  }
+}
